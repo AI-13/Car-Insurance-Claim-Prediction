@@ -1,0 +1,1340 @@
+2024-02-13 08:15:29,159:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-13 08:15:29,159:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-13 08:15:29,159:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-13 08:15:29,159:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-13 08:16:37,361:INFO:PyCaret ClassificationExperiment
+2024-02-13 08:16:37,361:INFO:Logging name: clf-default-name
+2024-02-13 08:16:37,361:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2024-02-13 08:16:37,361:INFO:version 3.2.0
+2024-02-13 08:16:37,361:INFO:Initializing setup()
+2024-02-13 08:16:37,361:INFO:self.USI: 120a
+2024-02-13 08:16:37,362:INFO:self._variable_keys: {'gpu_n_jobs_param', 'X', 'n_jobs_param', 'exp_name_log', 'idx', 'exp_id', 'data', 'is_multiclass', 'fix_imbalance', 'target_param', 'memory', 'gpu_param', '_available_plots', 'X_train', 'logging_param', 'y_test', 'log_plots_param', 'fold_groups_param', 'pipeline', 'seed', 'y', 'X_test', 'fold_generator', 'y_train', 'fold_shuffle_param', '_ml_usecase', 'USI', 'html_param'}
+2024-02-13 08:16:37,362:INFO:Checking environment
+2024-02-13 08:16:37,363:INFO:python_version: 3.10.9
+2024-02-13 08:16:37,363:INFO:python_build: ('main', 'Dec 15 2022 10:44:50')
+2024-02-13 08:16:37,363:INFO:machine: arm64
+2024-02-13 08:16:37,363:INFO:platform: macOS-12.6.2-arm64-arm-64bit
+2024-02-13 08:16:37,363:INFO:Memory: svmem(total=17179869184, available=5611536384, percent=67.3, used=7551713280, free=189906944, active=5433507840, inactive=5362728960, wired=2118205440)
+2024-02-13 08:16:37,363:INFO:Physical Core: 10
+2024-02-13 08:16:37,364:INFO:Logical Core: 10
+2024-02-13 08:16:37,364:INFO:Checking libraries
+2024-02-13 08:16:37,364:INFO:System:
+2024-02-13 08:16:37,364:INFO:    python: 3.10.9 (main, Dec 15 2022, 10:44:50) [Clang 14.0.0 (clang-1400.0.29.202)]
+2024-02-13 08:16:37,364:INFO:executable: /Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/bin/python3.10
+2024-02-13 08:16:37,364:INFO:   machine: macOS-12.6.2-arm64-arm-64bit
+2024-02-13 08:16:37,364:INFO:PyCaret required dependencies:
+2024-02-13 08:16:37,692:INFO:                 pip: 24.0
+2024-02-13 08:16:37,692:INFO:          setuptools: 65.6.3
+2024-02-13 08:16:37,692:INFO:             pycaret: 3.2.0
+2024-02-13 08:16:37,692:INFO:             IPython: 8.21.0
+2024-02-13 08:16:37,692:INFO:          ipywidgets: 8.1.2
+2024-02-13 08:16:37,692:INFO:                tqdm: 4.66.2
+2024-02-13 08:16:37,692:INFO:               numpy: 1.25.2
+2024-02-13 08:16:37,692:INFO:              pandas: 1.5.3
+2024-02-13 08:16:37,692:INFO:              jinja2: 3.1.3
+2024-02-13 08:16:37,692:INFO:               scipy: 1.10.1
+2024-02-13 08:16:37,692:INFO:              joblib: 1.3.2
+2024-02-13 08:16:37,692:INFO:             sklearn: 1.2.2
+2024-02-13 08:16:37,692:INFO:                pyod: 1.1.3
+2024-02-13 08:16:37,692:INFO:            imblearn: 0.12.0
+2024-02-13 08:16:37,692:INFO:   category_encoders: 2.6.3
+2024-02-13 08:16:37,692:INFO:            lightgbm: 4.3.0
+2024-02-13 08:16:37,692:INFO:               numba: 0.59.0
+2024-02-13 08:16:37,692:INFO:            requests: 2.31.0
+2024-02-13 08:16:37,692:INFO:          matplotlib: 3.6.0
+2024-02-13 08:16:37,692:INFO:          scikitplot: 0.3.7
+2024-02-13 08:16:37,692:INFO:         yellowbrick: 1.5
+2024-02-13 08:16:37,692:INFO:              plotly: 5.18.0
+2024-02-13 08:16:37,692:INFO:    plotly-resampler: Not installed
+2024-02-13 08:16:37,692:INFO:             kaleido: 0.2.1
+2024-02-13 08:16:37,692:INFO:           schemdraw: 0.15
+2024-02-13 08:16:37,692:INFO:         statsmodels: 0.14.1
+2024-02-13 08:16:37,693:INFO:              sktime: 0.21.1
+2024-02-13 08:16:37,693:INFO:               tbats: 1.1.3
+2024-02-13 08:16:37,693:INFO:            pmdarima: 2.0.4
+2024-02-13 08:16:37,693:INFO:              psutil: 5.9.8
+2024-02-13 08:16:37,693:INFO:          markupsafe: 2.1.5
+2024-02-13 08:16:37,693:INFO:             pickle5: Not installed
+2024-02-13 08:16:37,693:INFO:         cloudpickle: 3.0.0
+2024-02-13 08:16:37,693:INFO:         deprecation: 2.1.0
+2024-02-13 08:16:37,693:INFO:              xxhash: 3.4.1
+2024-02-13 08:16:37,693:INFO:           wurlitzer: 3.0.3
+2024-02-13 08:16:37,693:INFO:PyCaret optional dependencies:
+2024-02-13 08:16:37,704:INFO:                shap: Not installed
+2024-02-13 08:16:37,704:INFO:           interpret: Not installed
+2024-02-13 08:16:37,704:INFO:                umap: Not installed
+2024-02-13 08:16:37,704:INFO:     ydata_profiling: Not installed
+2024-02-13 08:16:37,704:INFO:  explainerdashboard: Not installed
+2024-02-13 08:16:37,704:INFO:             autoviz: Not installed
+2024-02-13 08:16:37,704:INFO:           fairlearn: Not installed
+2024-02-13 08:16:37,704:INFO:          deepchecks: Not installed
+2024-02-13 08:16:37,704:INFO:             xgboost: Not installed
+2024-02-13 08:16:37,704:INFO:            catboost: Not installed
+2024-02-13 08:16:37,704:INFO:              kmodes: Not installed
+2024-02-13 08:16:37,704:INFO:             mlxtend: Not installed
+2024-02-13 08:16:37,704:INFO:       statsforecast: Not installed
+2024-02-13 08:16:37,704:INFO:        tune_sklearn: Not installed
+2024-02-13 08:16:37,704:INFO:                 ray: Not installed
+2024-02-13 08:16:37,704:INFO:            hyperopt: Not installed
+2024-02-13 08:16:37,704:INFO:              optuna: Not installed
+2024-02-13 08:16:37,704:INFO:               skopt: Not installed
+2024-02-13 08:16:37,704:INFO:              mlflow: Not installed
+2024-02-13 08:16:37,704:INFO:              gradio: Not installed
+2024-02-13 08:16:37,704:INFO:             fastapi: Not installed
+2024-02-13 08:16:37,704:INFO:             uvicorn: Not installed
+2024-02-13 08:16:37,704:INFO:              m2cgen: Not installed
+2024-02-13 08:16:37,704:INFO:           evidently: Not installed
+2024-02-13 08:16:37,704:INFO:               fugue: Not installed
+2024-02-13 08:16:37,705:INFO:           streamlit: Not installed
+2024-02-13 08:16:37,705:INFO:             prophet: Not installed
+2024-02-13 08:16:37,705:INFO:None
+2024-02-13 08:16:37,705:INFO:Set up data.
+2024-02-13 08:16:37,815:INFO:Set up folding strategy.
+2024-02-13 08:16:37,815:INFO:Set up train/test split.
+2024-02-13 08:16:37,831:INFO:Set up index.
+2024-02-13 08:16:37,831:INFO:Assigning column types.
+2024-02-13 08:16:37,835:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2024-02-13 08:16:37,852:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-02-13 08:16:37,854:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-02-13 08:16:37,867:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-13 08:16:37,867:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-13 08:16:37,884:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-02-13 08:16:37,884:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-02-13 08:16:37,895:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-13 08:16:37,895:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-13 08:16:37,895:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2024-02-13 08:16:37,913:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-02-13 08:16:37,923:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-13 08:16:37,923:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-13 08:16:37,941:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-02-13 08:16:37,952:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-13 08:16:37,952:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-13 08:16:37,952:INFO:Engine successfully changes for model 'rbfsvm' to 'sklearn'.
+2024-02-13 08:16:37,980:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-13 08:16:37,980:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-13 08:16:38,009:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-13 08:16:38,009:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-13 08:16:38,010:INFO:Preparing preprocessing pipeline...
+2024-02-13 08:16:38,011:INFO:Set up simple imputation.
+2024-02-13 08:16:38,021:INFO:Set up encoding of ordinal features.
+2024-02-13 08:16:38,043:INFO:Set up encoding of categorical features.
+2024-02-13 08:16:39,036:INFO:Finished creating preprocessing pipeline.
+2024-02-13 08:16:39,082:INFO:Pipeline: Pipeline(memory=FastMemory(location=/var/folders/_2/gw71_72j1rl2l7zw22yhd9tm0000gn/T/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['policy_tenure', 'age_of_car',
+                                             'age_of_policyholder',
+                                             'population_density', 'make',
+                                             'airbags', 'displacement',
+                                             'cylinder', 'gear_box',
+                                             'turning_radius', 'length',
+                                             'width', 'height', 'gross_weight',
+                                             'nca...
+                                    include=['area_cluster', 'segment', 'model',
+                                             'fuel_type', 'max_torque',
+                                             'max_power', 'engine_type',
+                                             'steering_type'],
+                                    transformer=OneHotEncoder(cols=['area_cluster',
+                                                                    'segment',
+                                                                    'model',
+                                                                    'fuel_type',
+                                                                    'max_torque',
+                                                                    'max_power',
+                                                                    'engine_type',
+                                                                    'steering_type'],
+                                                              drop_invariant=False,
+                                                              handle_missing='return_nan',
+                                                              handle_unknown='value',
+                                                              return_df=True,
+                                                              use_cat_names=True,
+                                                              verbose=0)))],
+         verbose=False)
+2024-02-13 08:16:39,082:INFO:Creating final display dataframe.
+2024-02-13 08:16:39,866:INFO:Setup _display_container:                     Description             Value
+0                    Session id               232
+1                        Target          is_claim
+2                   Target type            Binary
+3           Original data shape       (58592, 43)
+4        Transformed data shape      (58592, 109)
+5   Transformed train set shape      (41014, 109)
+6    Transformed test set shape      (17578, 109)
+7              Ordinal features                19
+8              Numeric features                15
+9          Categorical features                27
+10                   Preprocess              True
+11              Imputation type            simple
+12           Numeric imputation              mean
+13       Categorical imputation              mode
+14     Maximum one-hot encoding                25
+15              Encoding method              None
+16               Fold Generator   StratifiedKFold
+17                  Fold Number                10
+18                     CPU Jobs                -1
+19                      Use GPU             False
+20               Log Experiment             False
+21              Experiment Name  clf-default-name
+22                          USI              120a
+2024-02-13 08:16:39,899:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-13 08:16:39,899:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-13 08:16:39,928:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-13 08:16:39,928:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-13 08:16:39,928:INFO:setup() successfully completed in 2.57s...............
+2024-02-13 08:18:51,817:INFO:Initializing compare_models()
+2024-02-13 08:18:51,818:INFO:compare_models(self=<pycaret.classification.oop.ClassificationExperiment object at 0x28bdc91b0>, include=None, fold=None, round=4, cross_validation=True, sort=Accuracy, n_select=1, budget_time=None, turbo=True, errors=ignore, fit_kwargs=None, groups=None, experiment_custom_tags=None, probability_threshold=None, verbose=True, parallel=None, caller_params={'self': <pycaret.classification.oop.ClassificationExperiment object at 0x28bdc91b0>, 'include': None, 'exclude': None, 'fold': None, 'round': 4, 'cross_validation': True, 'sort': 'Accuracy', 'n_select': 1, 'budget_time': None, 'turbo': True, 'errors': 'ignore', 'fit_kwargs': None, 'groups': None, 'experiment_custom_tags': None, 'probability_threshold': None, 'engine': None, 'verbose': True, 'parallel': None, '__class__': <class 'pycaret.classification.oop.ClassificationExperiment'>}, exclude=None)
+2024-02-13 08:18:51,818:INFO:Checking exceptions
+2024-02-13 08:18:51,839:INFO:Preparing display monitor
+2024-02-13 08:18:51,886:INFO:Initializing Logistic Regression
+2024-02-13 08:18:51,886:INFO:Total runtime is 4.2994817097981775e-06 minutes
+2024-02-13 08:18:51,888:INFO:SubProcess create_model() called ==================================
+2024-02-13 08:18:51,888:INFO:Initializing create_model()
+2024-02-13 08:18:51,888:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x28bdc91b0>, estimator=lr, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x1471c9fc0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-02-13 08:18:51,888:INFO:Checking exceptions
+2024-02-13 08:18:51,888:INFO:Importing libraries
+2024-02-13 08:18:51,889:INFO:Copying training dataset
+2024-02-13 08:18:51,907:INFO:Defining folds
+2024-02-13 08:18:51,907:INFO:Declaring metric variables
+2024-02-13 08:18:51,909:INFO:Importing untrained model
+2024-02-13 08:18:51,910:INFO:Logistic Regression Imported successfully
+2024-02-13 08:18:51,913:INFO:Starting cross validation
+2024-02-13 08:18:51,916:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-02-13 08:18:55,223:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2024-02-13 08:18:55,244:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2024-02-13 08:18:55,295:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2024-02-13 08:18:55,301:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2024-02-13 08:18:55,349:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2024-02-13 08:18:55,357:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2024-02-13 08:18:55,403:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2024-02-13 08:18:55,457:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2024-02-13 08:18:55,464:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2024-02-13 08:18:55,474:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2024-02-13 08:18:55,494:INFO:Calculating mean and std
+2024-02-13 08:18:55,497:INFO:Creating metrics dataframe
+2024-02-13 08:18:55,502:INFO:Uploading results into container
+2024-02-13 08:18:55,502:INFO:Uploading model into container now
+2024-02-13 08:18:55,503:INFO:_master_model_container: 1
+2024-02-13 08:18:55,503:INFO:_display_container: 2
+2024-02-13 08:18:55,503:INFO:LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+                   intercept_scaling=1, l1_ratio=None, max_iter=1000,
+                   multi_class='auto', n_jobs=None, penalty='l2',
+                   random_state=232, solver='lbfgs', tol=0.0001, verbose=0,
+                   warm_start=False)
+2024-02-13 08:18:55,503:INFO:create_model() successfully completed......................................
+2024-02-13 08:18:55,562:INFO:SubProcess create_model() end ==================================
+2024-02-13 08:18:55,563:INFO:Creating metrics dataframe
+2024-02-13 08:18:55,567:INFO:Initializing K Neighbors Classifier
+2024-02-13 08:18:55,567:INFO:Total runtime is 0.061348450183868405 minutes
+2024-02-13 08:18:55,568:INFO:SubProcess create_model() called ==================================
+2024-02-13 08:18:55,568:INFO:Initializing create_model()
+2024-02-13 08:18:55,568:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x28bdc91b0>, estimator=knn, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x1471c9fc0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-02-13 08:18:55,568:INFO:Checking exceptions
+2024-02-13 08:18:55,568:INFO:Importing libraries
+2024-02-13 08:18:55,568:INFO:Copying training dataset
+2024-02-13 08:18:55,580:INFO:Defining folds
+2024-02-13 08:18:55,580:INFO:Declaring metric variables
+2024-02-13 08:18:55,583:INFO:Importing untrained model
+2024-02-13 08:18:55,585:INFO:K Neighbors Classifier Imported successfully
+2024-02-13 08:18:55,589:INFO:Starting cross validation
+2024-02-13 08:18:55,591:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-02-13 08:18:59,612:INFO:Calculating mean and std
+2024-02-13 08:18:59,616:INFO:Creating metrics dataframe
+2024-02-13 08:18:59,617:INFO:Uploading results into container
+2024-02-13 08:18:59,618:INFO:Uploading model into container now
+2024-02-13 08:18:59,618:INFO:_master_model_container: 2
+2024-02-13 08:18:59,618:INFO:_display_container: 2
+2024-02-13 08:18:59,618:INFO:KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+                     metric_params=None, n_jobs=-1, n_neighbors=5, p=2,
+                     weights='uniform')
+2024-02-13 08:18:59,618:INFO:create_model() successfully completed......................................
+2024-02-13 08:18:59,679:INFO:SubProcess create_model() end ==================================
+2024-02-13 08:18:59,680:INFO:Creating metrics dataframe
+2024-02-13 08:18:59,684:INFO:Initializing Naive Bayes
+2024-02-13 08:18:59,684:INFO:Total runtime is 0.12996495167414346 minutes
+2024-02-13 08:18:59,685:INFO:SubProcess create_model() called ==================================
+2024-02-13 08:18:59,685:INFO:Initializing create_model()
+2024-02-13 08:18:59,685:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x28bdc91b0>, estimator=nb, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x1471c9fc0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-02-13 08:18:59,685:INFO:Checking exceptions
+2024-02-13 08:18:59,685:INFO:Importing libraries
+2024-02-13 08:18:59,685:INFO:Copying training dataset
+2024-02-13 08:18:59,695:INFO:Defining folds
+2024-02-13 08:18:59,695:INFO:Declaring metric variables
+2024-02-13 08:18:59,696:INFO:Importing untrained model
+2024-02-13 08:18:59,698:INFO:Naive Bayes Imported successfully
+2024-02-13 08:18:59,701:INFO:Starting cross validation
+2024-02-13 08:18:59,703:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-02-13 08:19:01,130:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2024-02-13 08:19:01,146:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2024-02-13 08:19:01,200:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2024-02-13 08:19:01,210:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2024-02-13 08:19:01,249:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2024-02-13 08:19:01,254:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2024-02-13 08:19:01,266:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2024-02-13 08:19:01,277:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2024-02-13 08:19:01,287:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2024-02-13 08:19:01,323:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2024-02-13 08:19:01,333:INFO:Calculating mean and std
+2024-02-13 08:19:01,334:INFO:Creating metrics dataframe
+2024-02-13 08:19:01,338:INFO:Uploading results into container
+2024-02-13 08:19:01,338:INFO:Uploading model into container now
+2024-02-13 08:19:01,339:INFO:_master_model_container: 3
+2024-02-13 08:19:01,339:INFO:_display_container: 2
+2024-02-13 08:19:01,339:INFO:GaussianNB(priors=None, var_smoothing=1e-09)
+2024-02-13 08:19:01,339:INFO:create_model() successfully completed......................................
+2024-02-13 08:19:01,392:INFO:SubProcess create_model() end ==================================
+2024-02-13 08:19:01,392:INFO:Creating metrics dataframe
+2024-02-13 08:19:01,396:INFO:Initializing Decision Tree Classifier
+2024-02-13 08:19:01,396:INFO:Total runtime is 0.1585110823313395 minutes
+2024-02-13 08:19:01,398:INFO:SubProcess create_model() called ==================================
+2024-02-13 08:19:01,398:INFO:Initializing create_model()
+2024-02-13 08:19:01,398:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x28bdc91b0>, estimator=dt, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x1471c9fc0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-02-13 08:19:01,398:INFO:Checking exceptions
+2024-02-13 08:19:01,398:INFO:Importing libraries
+2024-02-13 08:19:01,398:INFO:Copying training dataset
+2024-02-13 08:19:01,417:INFO:Defining folds
+2024-02-13 08:19:01,417:INFO:Declaring metric variables
+2024-02-13 08:19:01,418:INFO:Importing untrained model
+2024-02-13 08:19:01,420:INFO:Decision Tree Classifier Imported successfully
+2024-02-13 08:19:01,423:INFO:Starting cross validation
+2024-02-13 08:19:01,425:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-02-13 08:19:03,383:INFO:Calculating mean and std
+2024-02-13 08:19:03,383:INFO:Creating metrics dataframe
+2024-02-13 08:19:03,385:INFO:Uploading results into container
+2024-02-13 08:19:03,385:INFO:Uploading model into container now
+2024-02-13 08:19:03,385:INFO:_master_model_container: 4
+2024-02-13 08:19:03,385:INFO:_display_container: 2
+2024-02-13 08:19:03,386:INFO:DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
+                       max_depth=None, max_features=None, max_leaf_nodes=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       random_state=232, splitter='best')
+2024-02-13 08:19:03,386:INFO:create_model() successfully completed......................................
+2024-02-13 08:19:03,427:INFO:SubProcess create_model() end ==================================
+2024-02-13 08:19:03,427:INFO:Creating metrics dataframe
+2024-02-13 08:19:03,431:INFO:Initializing SVM - Linear Kernel
+2024-02-13 08:19:03,432:INFO:Total runtime is 0.19242985248565672 minutes
+2024-02-13 08:19:03,433:INFO:SubProcess create_model() called ==================================
+2024-02-13 08:19:03,433:INFO:Initializing create_model()
+2024-02-13 08:19:03,433:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x28bdc91b0>, estimator=svm, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x1471c9fc0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-02-13 08:19:03,433:INFO:Checking exceptions
+2024-02-13 08:19:03,433:INFO:Importing libraries
+2024-02-13 08:19:03,433:INFO:Copying training dataset
+2024-02-13 08:19:03,443:INFO:Defining folds
+2024-02-13 08:19:03,444:INFO:Declaring metric variables
+2024-02-13 08:19:03,445:INFO:Importing untrained model
+2024-02-13 08:19:03,447:INFO:SVM - Linear Kernel Imported successfully
+2024-02-13 08:19:03,450:INFO:Starting cross validation
+2024-02-13 08:19:03,452:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-02-13 08:19:06,441:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/pycaret/internal/metrics.py:190: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_scorer.py", line 76, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/pycaret/internal/metrics.py", line 182, in _score
+    return super()._score(
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_scorer.py", line 316, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_scorer.py", line 78, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/pycaret/internal/pipeline.py", line 127, in __getattr__
+    return getattr(self._final_estimator, name)
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/utils/_available_if.py", line 32, in __get__
+    if not self.check(obj):
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/linear_model/_stochastic_gradient.py", line 1235, in _check_proba
+    raise AttributeError(
+AttributeError: probability estimates are not available for loss='hinge'
+
+  warnings.warn(
+
+2024-02-13 08:19:06,507:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/pycaret/internal/metrics.py:190: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_scorer.py", line 76, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/pycaret/internal/metrics.py", line 182, in _score
+    return super()._score(
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_scorer.py", line 316, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_scorer.py", line 78, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/pycaret/internal/pipeline.py", line 127, in __getattr__
+    return getattr(self._final_estimator, name)
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/utils/_available_if.py", line 32, in __get__
+    if not self.check(obj):
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/linear_model/_stochastic_gradient.py", line 1235, in _check_proba
+    raise AttributeError(
+AttributeError: probability estimates are not available for loss='hinge'
+
+  warnings.warn(
+
+2024-02-13 08:19:06,510:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2024-02-13 08:19:06,549:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/pycaret/internal/metrics.py:190: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_scorer.py", line 76, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/pycaret/internal/metrics.py", line 182, in _score
+    return super()._score(
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_scorer.py", line 316, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_scorer.py", line 78, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/pycaret/internal/pipeline.py", line 127, in __getattr__
+    return getattr(self._final_estimator, name)
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/utils/_available_if.py", line 32, in __get__
+    if not self.check(obj):
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/linear_model/_stochastic_gradient.py", line 1235, in _check_proba
+    raise AttributeError(
+AttributeError: probability estimates are not available for loss='hinge'
+
+  warnings.warn(
+
+2024-02-13 08:19:06,552:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2024-02-13 08:19:06,859:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/pycaret/internal/metrics.py:190: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_scorer.py", line 76, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/pycaret/internal/metrics.py", line 182, in _score
+    return super()._score(
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_scorer.py", line 316, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_scorer.py", line 78, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/pycaret/internal/pipeline.py", line 127, in __getattr__
+    return getattr(self._final_estimator, name)
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/utils/_available_if.py", line 32, in __get__
+    if not self.check(obj):
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/linear_model/_stochastic_gradient.py", line 1235, in _check_proba
+    raise AttributeError(
+AttributeError: probability estimates are not available for loss='hinge'
+
+  warnings.warn(
+
+2024-02-13 08:19:07,007:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/pycaret/internal/metrics.py:190: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_scorer.py", line 76, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/pycaret/internal/metrics.py", line 182, in _score
+    return super()._score(
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_scorer.py", line 316, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_scorer.py", line 78, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/pycaret/internal/pipeline.py", line 127, in __getattr__
+    return getattr(self._final_estimator, name)
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/utils/_available_if.py", line 32, in __get__
+    if not self.check(obj):
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/linear_model/_stochastic_gradient.py", line 1235, in _check_proba
+    raise AttributeError(
+AttributeError: probability estimates are not available for loss='hinge'
+
+  warnings.warn(
+
+2024-02-13 08:19:07,095:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/pycaret/internal/metrics.py:190: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_scorer.py", line 76, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/pycaret/internal/metrics.py", line 182, in _score
+    return super()._score(
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_scorer.py", line 316, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_scorer.py", line 78, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/pycaret/internal/pipeline.py", line 127, in __getattr__
+    return getattr(self._final_estimator, name)
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/utils/_available_if.py", line 32, in __get__
+    if not self.check(obj):
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/linear_model/_stochastic_gradient.py", line 1235, in _check_proba
+    raise AttributeError(
+AttributeError: probability estimates are not available for loss='hinge'
+
+  warnings.warn(
+
+2024-02-13 08:19:07,099:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/pycaret/internal/metrics.py:190: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_scorer.py", line 76, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/pycaret/internal/metrics.py", line 182, in _score
+    return super()._score(
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_scorer.py", line 316, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_scorer.py", line 78, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/pycaret/internal/pipeline.py", line 127, in __getattr__
+    return getattr(self._final_estimator, name)
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/utils/_available_if.py", line 32, in __get__
+    if not self.check(obj):
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/linear_model/_stochastic_gradient.py", line 1235, in _check_proba
+    raise AttributeError(
+AttributeError: probability estimates are not available for loss='hinge'
+
+  warnings.warn(
+
+2024-02-13 08:19:07,358:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/pycaret/internal/metrics.py:190: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_scorer.py", line 76, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/pycaret/internal/metrics.py", line 182, in _score
+    return super()._score(
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_scorer.py", line 316, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_scorer.py", line 78, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/pycaret/internal/pipeline.py", line 127, in __getattr__
+    return getattr(self._final_estimator, name)
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/utils/_available_if.py", line 32, in __get__
+    if not self.check(obj):
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/linear_model/_stochastic_gradient.py", line 1235, in _check_proba
+    raise AttributeError(
+AttributeError: probability estimates are not available for loss='hinge'
+
+  warnings.warn(
+
+2024-02-13 08:19:07,361:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2024-02-13 08:19:07,405:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/pycaret/internal/metrics.py:190: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_scorer.py", line 76, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/pycaret/internal/metrics.py", line 182, in _score
+    return super()._score(
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_scorer.py", line 316, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_scorer.py", line 78, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/pycaret/internal/pipeline.py", line 127, in __getattr__
+    return getattr(self._final_estimator, name)
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/utils/_available_if.py", line 32, in __get__
+    if not self.check(obj):
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/linear_model/_stochastic_gradient.py", line 1235, in _check_proba
+    raise AttributeError(
+AttributeError: probability estimates are not available for loss='hinge'
+
+  warnings.warn(
+
+2024-02-13 08:19:07,478:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/pycaret/internal/metrics.py:190: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_scorer.py", line 76, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/pycaret/internal/metrics.py", line 182, in _score
+    return super()._score(
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_scorer.py", line 316, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_scorer.py", line 78, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/pycaret/internal/pipeline.py", line 127, in __getattr__
+    return getattr(self._final_estimator, name)
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/utils/_available_if.py", line 32, in __get__
+    if not self.check(obj):
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/linear_model/_stochastic_gradient.py", line 1235, in _check_proba
+    raise AttributeError(
+AttributeError: probability estimates are not available for loss='hinge'
+
+  warnings.warn(
+
+2024-02-13 08:19:07,493:INFO:Calculating mean and std
+2024-02-13 08:19:07,494:INFO:Creating metrics dataframe
+2024-02-13 08:19:07,495:INFO:Uploading results into container
+2024-02-13 08:19:07,496:INFO:Uploading model into container now
+2024-02-13 08:19:07,496:INFO:_master_model_container: 5
+2024-02-13 08:19:07,496:INFO:_display_container: 2
+2024-02-13 08:19:07,496:INFO:SGDClassifier(alpha=0.0001, average=False, class_weight=None,
+              early_stopping=False, epsilon=0.1, eta0=0.001, fit_intercept=True,
+              l1_ratio=0.15, learning_rate='optimal', loss='hinge',
+              max_iter=1000, n_iter_no_change=5, n_jobs=-1, penalty='l2',
+              power_t=0.5, random_state=232, shuffle=True, tol=0.001,
+              validation_fraction=0.1, verbose=0, warm_start=False)
+2024-02-13 08:19:07,496:INFO:create_model() successfully completed......................................
+2024-02-13 08:19:07,536:INFO:SubProcess create_model() end ==================================
+2024-02-13 08:19:07,536:INFO:Creating metrics dataframe
+2024-02-13 08:19:07,541:INFO:Initializing Ridge Classifier
+2024-02-13 08:19:07,541:INFO:Total runtime is 0.26091533501942954 minutes
+2024-02-13 08:19:07,542:INFO:SubProcess create_model() called ==================================
+2024-02-13 08:19:07,542:INFO:Initializing create_model()
+2024-02-13 08:19:07,542:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x28bdc91b0>, estimator=ridge, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x1471c9fc0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-02-13 08:19:07,542:INFO:Checking exceptions
+2024-02-13 08:19:07,542:INFO:Importing libraries
+2024-02-13 08:19:07,542:INFO:Copying training dataset
+2024-02-13 08:19:07,551:INFO:Defining folds
+2024-02-13 08:19:07,551:INFO:Declaring metric variables
+2024-02-13 08:19:07,553:INFO:Importing untrained model
+2024-02-13 08:19:07,554:INFO:Ridge Classifier Imported successfully
+2024-02-13 08:19:07,557:INFO:Starting cross validation
+2024-02-13 08:19:07,559:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-02-13 08:19:09,001:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/pycaret/internal/metrics.py:190: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_scorer.py", line 76, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/pycaret/internal/metrics.py", line 182, in _score
+    return super()._score(
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_scorer.py", line 316, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_scorer.py", line 78, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/pycaret/internal/pipeline.py", line 127, in __getattr__
+    return getattr(self._final_estimator, name)
+AttributeError: 'RidgeClassifier' object has no attribute 'predict_proba'
+
+  warnings.warn(
+
+2024-02-13 08:19:09,004:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2024-02-13 08:19:09,042:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/pycaret/internal/metrics.py:190: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_scorer.py", line 76, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/pycaret/internal/metrics.py", line 182, in _score
+    return super()._score(
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_scorer.py", line 316, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_scorer.py", line 78, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/pycaret/internal/pipeline.py", line 127, in __getattr__
+    return getattr(self._final_estimator, name)
+AttributeError: 'RidgeClassifier' object has no attribute 'predict_proba'
+
+  warnings.warn(
+
+2024-02-13 08:19:09,047:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2024-02-13 08:19:09,065:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/pycaret/internal/metrics.py:190: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_scorer.py", line 76, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/pycaret/internal/metrics.py", line 182, in _score
+    return super()._score(
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_scorer.py", line 316, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_scorer.py", line 78, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/pycaret/internal/pipeline.py", line 127, in __getattr__
+    return getattr(self._final_estimator, name)
+AttributeError: 'RidgeClassifier' object has no attribute 'predict_proba'
+
+  warnings.warn(
+
+2024-02-13 08:19:09,065:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/pycaret/internal/metrics.py:190: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_scorer.py", line 76, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/pycaret/internal/metrics.py", line 182, in _score
+    return super()._score(
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_scorer.py", line 316, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_scorer.py", line 78, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/pycaret/internal/pipeline.py", line 127, in __getattr__
+    return getattr(self._final_estimator, name)
+AttributeError: 'RidgeClassifier' object has no attribute 'predict_proba'
+
+  warnings.warn(
+
+2024-02-13 08:19:09,067:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2024-02-13 08:19:09,067:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2024-02-13 08:19:09,073:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/pycaret/internal/metrics.py:190: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_scorer.py", line 76, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/pycaret/internal/metrics.py", line 182, in _score
+    return super()._score(
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_scorer.py", line 316, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_scorer.py", line 78, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/pycaret/internal/pipeline.py", line 127, in __getattr__
+    return getattr(self._final_estimator, name)
+AttributeError: 'RidgeClassifier' object has no attribute 'predict_proba'
+
+  warnings.warn(
+
+2024-02-13 08:19:09,075:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2024-02-13 08:19:09,089:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/pycaret/internal/metrics.py:190: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_scorer.py", line 76, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/pycaret/internal/metrics.py", line 182, in _score
+    return super()._score(
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_scorer.py", line 316, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_scorer.py", line 78, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/pycaret/internal/pipeline.py", line 127, in __getattr__
+    return getattr(self._final_estimator, name)
+AttributeError: 'RidgeClassifier' object has no attribute 'predict_proba'
+
+  warnings.warn(
+
+2024-02-13 08:19:09,093:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2024-02-13 08:19:09,097:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/pycaret/internal/metrics.py:190: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_scorer.py", line 76, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/pycaret/internal/metrics.py", line 182, in _score
+    return super()._score(
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_scorer.py", line 316, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_scorer.py", line 78, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/pycaret/internal/pipeline.py", line 127, in __getattr__
+    return getattr(self._final_estimator, name)
+AttributeError: 'RidgeClassifier' object has no attribute 'predict_proba'
+
+  warnings.warn(
+
+2024-02-13 08:19:09,099:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2024-02-13 08:19:09,112:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/pycaret/internal/metrics.py:190: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_scorer.py", line 76, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/pycaret/internal/metrics.py", line 182, in _score
+    return super()._score(
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_scorer.py", line 316, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_scorer.py", line 78, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/pycaret/internal/pipeline.py", line 127, in __getattr__
+    return getattr(self._final_estimator, name)
+AttributeError: 'RidgeClassifier' object has no attribute 'predict_proba'
+
+  warnings.warn(
+
+2024-02-13 08:19:09,115:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2024-02-13 08:19:09,136:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/pycaret/internal/metrics.py:190: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_scorer.py", line 76, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/pycaret/internal/metrics.py", line 182, in _score
+    return super()._score(
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_scorer.py", line 316, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_scorer.py", line 78, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/pycaret/internal/pipeline.py", line 127, in __getattr__
+    return getattr(self._final_estimator, name)
+AttributeError: 'RidgeClassifier' object has no attribute 'predict_proba'
+
+  warnings.warn(
+
+2024-02-13 08:19:09,138:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2024-02-13 08:19:09,174:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/pycaret/internal/metrics.py:190: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_scorer.py", line 76, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/pycaret/internal/metrics.py", line 182, in _score
+    return super()._score(
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_scorer.py", line 316, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_scorer.py", line 78, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/pycaret/internal/pipeline.py", line 127, in __getattr__
+    return getattr(self._final_estimator, name)
+AttributeError: 'RidgeClassifier' object has no attribute 'predict_proba'
+
+  warnings.warn(
+
+2024-02-13 08:19:09,176:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2024-02-13 08:19:09,187:INFO:Calculating mean and std
+2024-02-13 08:19:09,188:INFO:Creating metrics dataframe
+2024-02-13 08:19:09,189:INFO:Uploading results into container
+2024-02-13 08:19:09,189:INFO:Uploading model into container now
+2024-02-13 08:19:09,190:INFO:_master_model_container: 6
+2024-02-13 08:19:09,190:INFO:_display_container: 2
+2024-02-13 08:19:09,190:INFO:RidgeClassifier(alpha=1.0, class_weight=None, copy_X=True, fit_intercept=True,
+                max_iter=None, positive=False, random_state=232, solver='auto',
+                tol=0.0001)
+2024-02-13 08:19:09,190:INFO:create_model() successfully completed......................................
+2024-02-13 08:19:09,230:INFO:SubProcess create_model() end ==================================
+2024-02-13 08:19:09,230:INFO:Creating metrics dataframe
+2024-02-13 08:19:09,235:INFO:Initializing Random Forest Classifier
+2024-02-13 08:19:09,235:INFO:Total runtime is 0.28915149768193565 minutes
+2024-02-13 08:19:09,236:INFO:SubProcess create_model() called ==================================
+2024-02-13 08:19:09,236:INFO:Initializing create_model()
+2024-02-13 08:19:09,236:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x28bdc91b0>, estimator=rf, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x1471c9fc0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-02-13 08:19:09,236:INFO:Checking exceptions
+2024-02-13 08:19:09,236:INFO:Importing libraries
+2024-02-13 08:19:09,236:INFO:Copying training dataset
+2024-02-13 08:19:09,245:INFO:Defining folds
+2024-02-13 08:19:09,245:INFO:Declaring metric variables
+2024-02-13 08:19:09,247:INFO:Importing untrained model
+2024-02-13 08:19:09,249:INFO:Random Forest Classifier Imported successfully
+2024-02-13 08:19:09,253:INFO:Starting cross validation
+2024-02-13 08:19:09,254:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-02-13 08:19:14,888:INFO:Calculating mean and std
+2024-02-13 08:19:14,889:INFO:Creating metrics dataframe
+2024-02-13 08:19:14,891:INFO:Uploading results into container
+2024-02-13 08:19:14,892:INFO:Uploading model into container now
+2024-02-13 08:19:14,893:INFO:_master_model_container: 7
+2024-02-13 08:19:14,893:INFO:_display_container: 2
+2024-02-13 08:19:14,894:INFO:RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=100, n_jobs=-1, oob_score=False,
+                       random_state=232, verbose=0, warm_start=False)
+2024-02-13 08:19:14,894:INFO:create_model() successfully completed......................................
+2024-02-13 08:19:14,952:INFO:SubProcess create_model() end ==================================
+2024-02-13 08:19:14,952:INFO:Creating metrics dataframe
+2024-02-13 08:19:14,957:INFO:Initializing Quadratic Discriminant Analysis
+2024-02-13 08:19:14,957:INFO:Total runtime is 0.3845173001289368 minutes
+2024-02-13 08:19:14,958:INFO:SubProcess create_model() called ==================================
+2024-02-13 08:19:14,958:INFO:Initializing create_model()
+2024-02-13 08:19:14,958:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x28bdc91b0>, estimator=qda, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x1471c9fc0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-02-13 08:19:14,958:INFO:Checking exceptions
+2024-02-13 08:19:14,959:INFO:Importing libraries
+2024-02-13 08:19:14,959:INFO:Copying training dataset
+2024-02-13 08:19:14,968:INFO:Defining folds
+2024-02-13 08:19:14,968:INFO:Declaring metric variables
+2024-02-13 08:19:14,970:INFO:Importing untrained model
+2024-02-13 08:19:14,971:INFO:Quadratic Discriminant Analysis Imported successfully
+2024-02-13 08:19:14,974:INFO:Starting cross validation
+2024-02-13 08:19:14,976:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-02-13 08:19:16,709:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-02-13 08:19:16,808:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-02-13 08:19:16,885:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-02-13 08:19:16,903:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-02-13 08:19:17,018:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-02-13 08:19:17,033:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-02-13 08:19:17,055:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-02-13 08:19:17,056:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-02-13 08:19:17,061:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-02-13 08:19:17,066:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-02-13 08:19:17,236:INFO:Calculating mean and std
+2024-02-13 08:19:17,238:INFO:Creating metrics dataframe
+2024-02-13 08:19:17,241:INFO:Uploading results into container
+2024-02-13 08:19:17,242:INFO:Uploading model into container now
+2024-02-13 08:19:17,242:INFO:_master_model_container: 8
+2024-02-13 08:19:17,242:INFO:_display_container: 2
+2024-02-13 08:19:17,242:INFO:QuadraticDiscriminantAnalysis(priors=None, reg_param=0.0,
+                              store_covariance=False, tol=0.0001)
+2024-02-13 08:19:17,242:INFO:create_model() successfully completed......................................
+2024-02-13 08:19:17,297:INFO:SubProcess create_model() end ==================================
+2024-02-13 08:19:17,297:INFO:Creating metrics dataframe
+2024-02-13 08:19:17,302:INFO:Initializing Ada Boost Classifier
+2024-02-13 08:19:17,302:INFO:Total runtime is 0.4236059149106344 minutes
+2024-02-13 08:19:17,303:INFO:SubProcess create_model() called ==================================
+2024-02-13 08:19:17,304:INFO:Initializing create_model()
+2024-02-13 08:19:17,304:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x28bdc91b0>, estimator=ada, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x1471c9fc0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-02-13 08:19:17,304:INFO:Checking exceptions
+2024-02-13 08:19:17,304:INFO:Importing libraries
+2024-02-13 08:19:17,304:INFO:Copying training dataset
+2024-02-13 08:19:17,323:INFO:Defining folds
+2024-02-13 08:19:17,323:INFO:Declaring metric variables
+2024-02-13 08:19:17,325:INFO:Importing untrained model
+2024-02-13 08:19:17,327:INFO:Ada Boost Classifier Imported successfully
+2024-02-13 08:19:17,330:INFO:Starting cross validation
+2024-02-13 08:19:17,332:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-02-13 08:19:20,797:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2024-02-13 08:19:20,807:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2024-02-13 08:19:20,810:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2024-02-13 08:19:20,828:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2024-02-13 08:19:20,864:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2024-02-13 08:19:20,949:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2024-02-13 08:19:20,961:INFO:Calculating mean and std
+2024-02-13 08:19:20,962:INFO:Creating metrics dataframe
+2024-02-13 08:19:20,964:INFO:Uploading results into container
+2024-02-13 08:19:20,964:INFO:Uploading model into container now
+2024-02-13 08:19:20,964:INFO:_master_model_container: 9
+2024-02-13 08:19:20,964:INFO:_display_container: 2
+2024-02-13 08:19:20,965:INFO:AdaBoostClassifier(algorithm='SAMME.R', base_estimator='deprecated',
+                   estimator=None, learning_rate=1.0, n_estimators=50,
+                   random_state=232)
+2024-02-13 08:19:20,965:INFO:create_model() successfully completed......................................
+2024-02-13 08:19:21,010:INFO:SubProcess create_model() end ==================================
+2024-02-13 08:19:21,011:INFO:Creating metrics dataframe
+2024-02-13 08:19:21,016:INFO:Initializing Gradient Boosting Classifier
+2024-02-13 08:19:21,016:INFO:Total runtime is 0.48550422986348474 minutes
+2024-02-13 08:19:21,018:INFO:SubProcess create_model() called ==================================
+2024-02-13 08:19:21,018:INFO:Initializing create_model()
+2024-02-13 08:19:21,018:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x28bdc91b0>, estimator=gbc, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x1471c9fc0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-02-13 08:19:21,018:INFO:Checking exceptions
+2024-02-13 08:19:21,018:INFO:Importing libraries
+2024-02-13 08:19:21,018:INFO:Copying training dataset
+2024-02-13 08:19:21,028:INFO:Defining folds
+2024-02-13 08:19:21,028:INFO:Declaring metric variables
+2024-02-13 08:19:21,030:INFO:Importing untrained model
+2024-02-13 08:19:21,031:INFO:Gradient Boosting Classifier Imported successfully
+2024-02-13 08:19:21,035:INFO:Starting cross validation
+2024-02-13 08:19:21,036:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-02-13 08:19:29,782:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2024-02-13 08:19:29,848:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2024-02-13 08:19:29,850:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2024-02-13 08:19:29,944:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2024-02-13 08:19:29,947:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2024-02-13 08:19:29,974:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2024-02-13 08:19:29,989:INFO:Calculating mean and std
+2024-02-13 08:19:29,990:INFO:Creating metrics dataframe
+2024-02-13 08:19:29,991:INFO:Uploading results into container
+2024-02-13 08:19:29,992:INFO:Uploading model into container now
+2024-02-13 08:19:29,992:INFO:_master_model_container: 10
+2024-02-13 08:19:29,992:INFO:_display_container: 2
+2024-02-13 08:19:29,992:INFO:GradientBoostingClassifier(ccp_alpha=0.0, criterion='friedman_mse', init=None,
+                           learning_rate=0.1, loss='log_loss', max_depth=3,
+                           max_features=None, max_leaf_nodes=None,
+                           min_impurity_decrease=0.0, min_samples_leaf=1,
+                           min_samples_split=2, min_weight_fraction_leaf=0.0,
+                           n_estimators=100, n_iter_no_change=None,
+                           random_state=232, subsample=1.0, tol=0.0001,
+                           validation_fraction=0.1, verbose=0,
+                           warm_start=False)
+2024-02-13 08:19:29,992:INFO:create_model() successfully completed......................................
+2024-02-13 08:19:30,042:INFO:SubProcess create_model() end ==================================
+2024-02-13 08:19:30,042:INFO:Creating metrics dataframe
+2024-02-13 08:19:30,048:INFO:Initializing Linear Discriminant Analysis
+2024-02-13 08:19:30,048:INFO:Total runtime is 0.6360420147577922 minutes
+2024-02-13 08:19:30,050:INFO:SubProcess create_model() called ==================================
+2024-02-13 08:19:30,050:INFO:Initializing create_model()
+2024-02-13 08:19:30,050:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x28bdc91b0>, estimator=lda, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x1471c9fc0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-02-13 08:19:30,050:INFO:Checking exceptions
+2024-02-13 08:19:30,050:INFO:Importing libraries
+2024-02-13 08:19:30,050:INFO:Copying training dataset
+2024-02-13 08:19:30,061:INFO:Defining folds
+2024-02-13 08:19:30,061:INFO:Declaring metric variables
+2024-02-13 08:19:30,063:INFO:Importing untrained model
+2024-02-13 08:19:30,064:INFO:Linear Discriminant Analysis Imported successfully
+2024-02-13 08:19:30,067:INFO:Starting cross validation
+2024-02-13 08:19:30,069:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-02-13 08:19:32,081:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2024-02-13 08:19:32,178:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2024-02-13 08:19:32,237:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2024-02-13 08:19:32,244:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2024-02-13 08:19:32,284:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2024-02-13 08:19:32,285:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2024-02-13 08:19:32,345:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2024-02-13 08:19:32,347:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2024-02-13 08:19:32,372:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2024-02-13 08:19:32,450:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2024-02-13 08:19:32,458:INFO:Calculating mean and std
+2024-02-13 08:19:32,460:INFO:Creating metrics dataframe
+2024-02-13 08:19:32,465:INFO:Uploading results into container
+2024-02-13 08:19:32,465:INFO:Uploading model into container now
+2024-02-13 08:19:32,466:INFO:_master_model_container: 11
+2024-02-13 08:19:32,466:INFO:_display_container: 2
+2024-02-13 08:19:32,466:INFO:LinearDiscriminantAnalysis(covariance_estimator=None, n_components=None,
+                           priors=None, shrinkage=None, solver='svd',
+                           store_covariance=False, tol=0.0001)
+2024-02-13 08:19:32,466:INFO:create_model() successfully completed......................................
+2024-02-13 08:19:32,524:INFO:SubProcess create_model() end ==================================
+2024-02-13 08:19:32,524:INFO:Creating metrics dataframe
+2024-02-13 08:19:32,530:INFO:Initializing Extra Trees Classifier
+2024-02-13 08:19:32,530:INFO:Total runtime is 0.6774057467778525 minutes
+2024-02-13 08:19:32,531:INFO:SubProcess create_model() called ==================================
+2024-02-13 08:19:32,532:INFO:Initializing create_model()
+2024-02-13 08:19:32,532:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x28bdc91b0>, estimator=et, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x1471c9fc0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-02-13 08:19:32,532:INFO:Checking exceptions
+2024-02-13 08:19:32,532:INFO:Importing libraries
+2024-02-13 08:19:32,532:INFO:Copying training dataset
+2024-02-13 08:19:32,545:INFO:Defining folds
+2024-02-13 08:19:32,545:INFO:Declaring metric variables
+2024-02-13 08:19:32,546:INFO:Importing untrained model
+2024-02-13 08:19:32,548:INFO:Extra Trees Classifier Imported successfully
+2024-02-13 08:19:32,552:INFO:Starting cross validation
+2024-02-13 08:19:32,554:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-02-13 08:19:39,550:INFO:Calculating mean and std
+2024-02-13 08:19:39,552:INFO:Creating metrics dataframe
+2024-02-13 08:19:39,556:INFO:Uploading results into container
+2024-02-13 08:19:39,557:INFO:Uploading model into container now
+2024-02-13 08:19:39,557:INFO:_master_model_container: 12
+2024-02-13 08:19:39,557:INFO:_display_container: 2
+2024-02-13 08:19:39,557:INFO:ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0, class_weight=None,
+                     criterion='gini', max_depth=None, max_features='sqrt',
+                     max_leaf_nodes=None, max_samples=None,
+                     min_impurity_decrease=0.0, min_samples_leaf=1,
+                     min_samples_split=2, min_weight_fraction_leaf=0.0,
+                     n_estimators=100, n_jobs=-1, oob_score=False,
+                     random_state=232, verbose=0, warm_start=False)
+2024-02-13 08:19:39,557:INFO:create_model() successfully completed......................................
+2024-02-13 08:19:39,625:INFO:SubProcess create_model() end ==================================
+2024-02-13 08:19:39,626:INFO:Creating metrics dataframe
+2024-02-13 08:19:39,631:INFO:Initializing Light Gradient Boosting Machine
+2024-02-13 08:19:39,631:INFO:Total runtime is 0.7957486629486085 minutes
+2024-02-13 08:19:39,632:INFO:SubProcess create_model() called ==================================
+2024-02-13 08:19:39,632:INFO:Initializing create_model()
+2024-02-13 08:19:39,632:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x28bdc91b0>, estimator=lightgbm, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x1471c9fc0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-02-13 08:19:39,632:INFO:Checking exceptions
+2024-02-13 08:19:39,632:INFO:Importing libraries
+2024-02-13 08:19:39,632:INFO:Copying training dataset
+2024-02-13 08:19:39,645:INFO:Defining folds
+2024-02-13 08:19:39,645:INFO:Declaring metric variables
+2024-02-13 08:19:39,647:INFO:Importing untrained model
+2024-02-13 08:19:39,649:INFO:Light Gradient Boosting Machine Imported successfully
+2024-02-13 08:19:39,653:INFO:Starting cross validation
+2024-02-13 08:19:39,655:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-02-13 08:19:44,967:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2024-02-13 08:19:44,988:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2024-02-13 08:19:45,175:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2024-02-13 08:19:45,402:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2024-02-13 08:19:45,409:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2024-02-13 08:19:45,467:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2024-02-13 08:19:45,477:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2024-02-13 08:19:45,489:INFO:Calculating mean and std
+2024-02-13 08:19:45,490:INFO:Creating metrics dataframe
+2024-02-13 08:19:45,491:INFO:Uploading results into container
+2024-02-13 08:19:45,491:INFO:Uploading model into container now
+2024-02-13 08:19:45,492:INFO:_master_model_container: 13
+2024-02-13 08:19:45,492:INFO:_display_container: 2
+2024-02-13 08:19:45,492:INFO:LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=232, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0)
+2024-02-13 08:19:45,492:INFO:create_model() successfully completed......................................
+2024-02-13 08:19:45,532:INFO:SubProcess create_model() end ==================================
+2024-02-13 08:19:45,532:INFO:Creating metrics dataframe
+2024-02-13 08:19:45,538:INFO:Initializing Dummy Classifier
+2024-02-13 08:19:45,538:INFO:Total runtime is 0.8941970308621725 minutes
+2024-02-13 08:19:45,539:INFO:SubProcess create_model() called ==================================
+2024-02-13 08:19:45,539:INFO:Initializing create_model()
+2024-02-13 08:19:45,539:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x28bdc91b0>, estimator=dummy, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x1471c9fc0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-02-13 08:19:45,539:INFO:Checking exceptions
+2024-02-13 08:19:45,539:INFO:Importing libraries
+2024-02-13 08:19:45,539:INFO:Copying training dataset
+2024-02-13 08:19:45,550:INFO:Defining folds
+2024-02-13 08:19:45,550:INFO:Declaring metric variables
+2024-02-13 08:19:45,551:INFO:Importing untrained model
+2024-02-13 08:19:45,553:INFO:Dummy Classifier Imported successfully
+2024-02-13 08:19:45,555:INFO:Starting cross validation
+2024-02-13 08:19:45,557:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-02-13 08:19:46,923:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2024-02-13 08:19:46,955:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2024-02-13 08:19:46,984:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2024-02-13 08:19:47,012:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2024-02-13 08:19:47,014:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2024-02-13 08:19:47,045:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2024-02-13 08:19:47,047:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2024-02-13 08:19:47,073:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2024-02-13 08:19:47,080:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2024-02-13 08:19:47,112:WARNING:/Users/aiomote/Data Science Projects/Car Insurance Claim Prediction/env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2024-02-13 08:19:47,122:INFO:Calculating mean and std
+2024-02-13 08:19:47,122:INFO:Creating metrics dataframe
+2024-02-13 08:19:47,124:INFO:Uploading results into container
+2024-02-13 08:19:47,124:INFO:Uploading model into container now
+2024-02-13 08:19:47,124:INFO:_master_model_container: 14
+2024-02-13 08:19:47,124:INFO:_display_container: 2
+2024-02-13 08:19:47,124:INFO:DummyClassifier(constant=None, random_state=232, strategy='prior')
+2024-02-13 08:19:47,124:INFO:create_model() successfully completed......................................
+2024-02-13 08:19:47,166:INFO:SubProcess create_model() end ==================================
+2024-02-13 08:19:47,166:INFO:Creating metrics dataframe
+2024-02-13 08:19:47,176:INFO:Initializing create_model()
+2024-02-13 08:19:47,176:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x28bdc91b0>, estimator=LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+                   intercept_scaling=1, l1_ratio=None, max_iter=1000,
+                   multi_class='auto', n_jobs=None, penalty='l2',
+                   random_state=232, solver='lbfgs', tol=0.0001, verbose=0,
+                   warm_start=False), fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-02-13 08:19:47,176:INFO:Checking exceptions
+2024-02-13 08:19:47,176:INFO:Importing libraries
+2024-02-13 08:19:47,176:INFO:Copying training dataset
+2024-02-13 08:19:47,188:INFO:Defining folds
+2024-02-13 08:19:47,188:INFO:Declaring metric variables
+2024-02-13 08:19:47,188:INFO:Importing untrained model
+2024-02-13 08:19:47,188:INFO:Declaring custom model
+2024-02-13 08:19:47,188:INFO:Logistic Regression Imported successfully
+2024-02-13 08:19:47,189:INFO:Cross validation set to False
+2024-02-13 08:19:47,189:INFO:Fitting Model
+2024-02-13 08:19:49,901:INFO:LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+                   intercept_scaling=1, l1_ratio=None, max_iter=1000,
+                   multi_class='auto', n_jobs=None, penalty='l2',
+                   random_state=232, solver='lbfgs', tol=0.0001, verbose=0,
+                   warm_start=False)
+2024-02-13 08:19:49,901:INFO:create_model() successfully completed......................................
+2024-02-13 08:19:49,998:INFO:_master_model_container: 14
+2024-02-13 08:19:49,998:INFO:_display_container: 2
+2024-02-13 08:19:49,999:INFO:LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+                   intercept_scaling=1, l1_ratio=None, max_iter=1000,
+                   multi_class='auto', n_jobs=None, penalty='l2',
+                   random_state=232, solver='lbfgs', tol=0.0001, verbose=0,
+                   warm_start=False)
+2024-02-13 08:19:49,999:INFO:compare_models() successfully completed......................................
